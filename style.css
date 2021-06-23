@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
 body {
+	text-align: center;
 	background: linear-gradient(-65deg, #000000, #6C6EA0);
 	background-size: 400% 400%;
 	-webkit-animation: gradient 20s ease infinite;
@@ -96,4 +97,43 @@ padding: 0;
 
 #title2 {
 	margin-right: 30px;
+}
+
+.topbar::before {
+margin: 0;
+padding: 0;
+	background: linear-gradient(-65deg, #000000, #6C6EA0);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 20s ease infinite;
+	        animation: gradient 20s ease infinite;
+}
+
+.box {
+  margin: 0 auto;
+  position: relative;
+  background: rgba(0, 0, 0, .2);
+  box-shadow: 0px 3px 5px black;
+  width: 300px;
+  height: 180px;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 10 10;
+  padding: 0 20;
+  vertical-align: middle;
+  transition: background-color 0.2s, filter 0.2s;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.box:hover {
+  background-color: rgb(0, 0, 0, .5);
 }
