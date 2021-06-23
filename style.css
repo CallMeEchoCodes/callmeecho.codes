@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+	background: linear-gradient(-65deg, #000000, #6C6EA0);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 20s ease infinite;
+	        animation: gradient 20s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a {
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	color: white;
+}
+
+.center {
+	text-align: center;
+}
+
+.name {
+	text-align: center;
+	color: white;
+		font-family: 'Quicksand', sans-serif;
+}
+
+.topbar::before {
+margin: 0;
+padding: 0;
+	background: linear-gradient(-65deg, #000000, #6C6EA0);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 20s ease infinite;
+	        animation: gradient 20s ease infinite;
+}
+
+.topbar {
+  margin: 0 auto;
+  position: relative;
+  height: 3rem;
+  background: rgba(0, 0, 0, .2);
+  box-shadow: 0px 3px 5px black;
+}
+
+.topbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.title {  
+  position: absolute;
+  font-size: 20px;
+  line-height: 1.5;
+  height: 100%;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.link {
+	text-decoration: underline;
+}
+
+#title2 {
+	margin-right: 30px;
+}
