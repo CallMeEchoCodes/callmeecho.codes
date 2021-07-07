@@ -45,7 +45,11 @@ p {
 }
 
 .center {
-	text-align: center;
+	  text-align: center;
+	  margin: auto;
+	  width: 50%;
+	  border: 3px solid green;
+	  padding: 10px;
 }
 
 .name {
